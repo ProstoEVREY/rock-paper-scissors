@@ -4,8 +4,8 @@ Console Application to play rock-paper-scissors game.Moves can be confirmed by c
 
 Launching
 <p>
-<b> cd rps </b>
+<b> > cd rps </b>
   </p>
   <p>
-<b> node game.js {>1 odd arguments}</b>
+<b> > node game.js {>1 odd arguments}</b>
   </p>
