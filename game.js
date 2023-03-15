@@ -35,9 +35,22 @@ class Game {
             return
         }
 
+        if (args.length == 1) {
+            console.log("The options are not enough of. Try again with more parameters")
+            console.log("For example: 'node rps.js ROCK PAPER SCISSORS' (remember that number of arguments should be odd and >1)")
+            return
+        }
+
 
         if (!(args.length % 2)) {
             console.log("Number of args is incorrect")
+            console.log("For example: 'node rps.js ROCK PAPER SCISSORS' (remember that number of arguments should be odd and >1)")
+            return
+        }
+
+        const duplicateElements = args.filter((item, index) => args.indexOf(item) !== index)
+        if (duplicateElements.length) {
+            console.log("You should not include duplicate elements!")
             console.log("For example: 'node rps.js ROCK PAPER SCISSORS' (remember that number of arguments should be odd and >1)")
             return
         }
